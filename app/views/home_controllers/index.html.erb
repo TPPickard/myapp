@@ -1,0 +1,21 @@
+<h1>Listing home_controllers</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @home_controllers.each do |home_controller| %>
+  <tr>
+    <td><%= link_to 'Show', home_controller %></td>
+    <td><%= link_to 'Edit', edit_home_controller_path(home_controller) %></td>
+    <td><%= link_to 'Destroy', home_controller, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Home controller', new_home_controller_path %>
